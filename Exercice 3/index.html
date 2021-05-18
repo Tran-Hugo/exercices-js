@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let age = parseInt(prompt('Votre age'));
+
+        while (age < 18) {
+            alert('Erreur !')
+            age = parseInt(prompt('Votre age'))
+        }
+
+        if (age >=18) {
+            alert('Entrez')
+        }*/
+
+        let age = parseInt(prompt('Votre Age'));
+
+        function checkAge(){
+            if (age < 18) {
+                alert('Trop jeune');
+                age = parseInt(prompt('Votre Age'));
+                checkAge();
+            }
+
+            else {
+                alert('Age valide');
+
+            }
+        }
+        
+
+
+        checkAge();
+
+    </script>
+</body>
+</html>
